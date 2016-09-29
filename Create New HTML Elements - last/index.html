@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Creating a new HTML element</title>
+</head>
+<body>
+    <div id="div1">
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p> //appends to end of Children
+</div> 
+</body>
+
+<script>
+var para = document.createElement("p");
+var node = document.createTextNode("This is new.");
+para.appendChild(node);
+
+var element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+<!--
+Example Explained 
+This code creates a new <p> element:
+
+var para = document.createElement("p");
+To add text to the <p> element, you must create a text node first. This code creates a text node:
+
+var node = document.createTextNode("This is a new paragraph.");
+Then you must append the text node to the <p> element:
+
+para.appendChild(node);
+Finally you must append the new element to an existing element.
+
+This code finds an existing element:
+
+var element = document.getElementById("div1");
+This code appends the new element to the existing element:
+
+element.appendChild(para);
+-->

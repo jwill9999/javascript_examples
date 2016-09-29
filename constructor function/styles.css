@@ -1,0 +1,13 @@
+#wrapper{
+    height: 300px;
+    width: 80%;
+    background-color: lightgrey;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 36px;
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-left: 50px;
+}

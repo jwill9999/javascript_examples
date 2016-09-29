@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>curried</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body id = "wrapper">
+    <code>
+
+        var addthreenumbers = function ( a, b, c ) {
+
+            return function(b){
+
+                return function(c) {
+
+                    return a + b + c;
+           
+             };
+           };
+        };
+
+
+    </code>
+    <h1 id="demo"></h1>
+
+    <script src="main.js"></script>
+        
+   
+</body>
+</html>

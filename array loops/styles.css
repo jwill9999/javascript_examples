@@ -1,0 +1,19 @@
+
+#wrapper{
+    width: 80%;
+    height: 1080px;
+    margin: 0 auto;
+    background-color: #F7F9F9  ;
+
+}
+p  {
+    color: black;
+    font-size: 36px;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+input {
+    margin-left: 50px;
+}

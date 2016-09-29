@@ -1,0 +1,20 @@
+
+ li.active {
+   float: left;
+   margin: 10px;
+   background: #0C0;
+   width: 100px;
+   height: 100px;
+   cursor: pointer;
+   list-style: none;
+ }
+ 
+  li.nonActive {
+   float: left;
+   margin: 10px;
+   background: #09C;
+   width: 100px;
+   height: 100px;
+   cursor: pointer;
+   list-style: none;
+ }
