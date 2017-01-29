@@ -1,11 +1,13 @@
-var animals = [
+var animals = 
+    [
     { name: "Jason", species:"rabitt"},
     { name: "Jessica", species:"dog"},
     { name: "Jacky", species:"dog"},
     { name: "Luke", species:"fish"},
     { name: "Junior", species:"cat"},
     { name: "Thomas", species:"cat"}
-]
+    ];
+
 
 
 /******************************************

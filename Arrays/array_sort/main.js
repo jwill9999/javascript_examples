@@ -1,3 +1,5 @@
+//These methods modify the array:
+
 var numbers = [1, 12, 2 ,23,77,7,33,5,99,234,];
 var numbers = numbers.sort();
 console.log('__________________________________________________________________');
