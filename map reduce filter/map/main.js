@@ -13,56 +13,19 @@ var animals = [
 ******************************************/
 
 var names = animals.map(function(animals){
-    return animals.name;
+    return '\n'+ animals.name + " is a " + animals.species;
 });
-
-/********************************************
-*********  for loop method  *****************
-********************************************/
-
-/*
-
-var names = [];
-for(var i = 0 ; i < animals.length; i++){
-    names.push(animals[i].name)
-    }
-
-
-*/
+names = names.toString();
 console.log(names);
 
 
 
-/****************************************************************
-*****************************************************************
+/*RESULTS
 
-Map calls a provided callback function once for each element in
-an array, in order, and constructs a new array from the results. 
-
-returned 
-
-["Jason", "Jessica", "Jacky", "Luke", "Junior", "Thomas"]
-0
-:
-"Jason"
-1
-:
-"Jessica"
-2
-:
-"Jacky"
-3
-:
-"Luke"
-4
-:
-"Junior"
-5
-:
-"Thomas"
-length
-:
-6
-
-******************************************************************
-*****************************************************************/
+        Jason is a rabitt,
+        Jessica is a dog,
+        Jacky is a dog,
+        Luke is a fish,
+        Junior is a cat,
+        Thomas is a cat
+*/

@@ -39,7 +39,7 @@ switch (new Date().getDay()) {
 }
 
 /*the inner html is written to the P tag with an id of "demo" with day as its variable*/
-
-document.getElementById("demo").innerHTML = "Today is " + day;
+console.log("Today is " + day);
+//document.getElementById("demo").innerHTML = "Today is " + day;
 
 }());

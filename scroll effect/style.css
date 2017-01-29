@@ -1,0 +1,93 @@
+
+h1 {
+    font-size: 60px;
+}
+
+body{
+    width: 100%;
+    background-color: grey;
+}
+.wrapper {
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+}
+
+.box:nth-child(even) {
+    background-color: red;
+}
+
+#one,
+#three {
+    position: relative;
+     left: -1000px;
+}
+
+#two,
+#four {
+    position: relative;
+    left: 1000px;
+}
+
+
+
+.reveal-right {
+    position: relative;
+    animation: reveal-right 2s ease-in-out forwards
+}
+
+.reveal-left {
+    position: relative;
+    animation: reveal-left 2s ease-in-out forwards
+}
+
+@keyframes reveal-right {
+    0% {        
+        left: 1000px;
+    }
+    50% {
+        left: -200px;
+    }
+    70% {
+        left: 150px;
+    }
+    85% {
+        left: -50px;
+    }
+    100% {
+        left: 0px;
+
+    }
+}
+
+@keyframes reveal-left {
+    0% {
+        left: -1000px;
+    }
+    50% {
+        left: 200px;
+    }
+    70% {
+        left: -150px;
+    }
+    85% {
+        left: 50px;
+    }
+    100% {
+        left: 0px;
+        
+
+    }
+}

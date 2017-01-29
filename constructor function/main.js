@@ -18,8 +18,8 @@ Person.prototype.fullName = function () {
     var msg;
 
     msg = this.firstName + " " + this.lastName;
-
-    document.getElementById("demo").innerHTML = msg;
+    console.log(msg);
+    //document.getElementById("demo").innerHTML = msg;
 
 };
 

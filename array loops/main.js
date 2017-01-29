@@ -1,8 +1,15 @@
+var numb2 = require('./forloop').numb2;
+var numb3 = require('./forin').numb3;
+var foreach = require('./foreach').foreach;
+var array1 = [1, 2, 3, 4, 5, 6, ];
+var a, b, c;
+
+
 /****************************FUNCTION THREE*******************************************/
 
 /*write function using id and innerHTML*/
 
-var write = function(text) {
+function write(text) {
       try {
             if (typeof text !== "string") {
                   console.log("Error : Not a string");
@@ -12,67 +19,25 @@ var write = function(text) {
 
                   };
             } else {
-                  document.getElementById("demo").innerHTML = text;
+                  console.log(text + '------------------------------------------------------------');
+                  //document.getElementById("demo").innerHTML = ;
             }
       } catch (e) {
-            document.getElementById("demo").innerHTML = e.message + " " + e.decription;
+            console.log(e.message + " " + e.decription);
+            //document.getElementById("demo").innerHTML = e.message + " " + e.decription;
       }
 
-};
-
-/****************************FUNCTION TWO***********************************************/
-
-var numb2 = function(array) {
-
-      //REMEMBER to set variable to empty string object.
-      var x = "";
-
-      //for in loop
-      for (var i in array) {
-
-            //each value is stored each time an += array[i]      
-            x += "This is number : " + array[i] + "<br>";
-
-      }
-      //we return its stored value x to the function that sent it
-      return x;
-};
+}
 
 
-/****************************FUNCTION ONE***********************************************/
-/*IIFE which takes an array and passes it around (Immediate invocted function expression)*/
-(function myFunction() {
-      var x, text;
-
-      x = ["a", "b", "c", "d", 5, 6, 7, 8, 9];
-
-      /*we pass array(x) to numb2 function with x.
-      x is returned after the array function loops
-      through it and we set the returned value to text*/
-      text = numb2(x);
-
-      /*We the send the result(text) to the print function*/
-      write(text);
-}());
+a = numb3(array1); //forin
+write(a);
+b = foreach(array1); //foreach
+write(b);
+c = numb2(array1); //forloop
+write(c);
 
 
-
-/***********************ALTERNATIVE METHOD FUNCTION TWO*********************************/
-
-/* for loop which takes an array as an argument passed from other function.*/
-
-/*var numb2 = function(array) {
-
-      //remember to set variable to emptystring object      
-      var x = "";
-
-      for (var i = 0; i < array.length; i++) {
-
-      x += "This is number : " + array[i] + "<br>";
-
-      }
-      return x; // returm the variable to function that requested it
-};*/
 
 
 /*

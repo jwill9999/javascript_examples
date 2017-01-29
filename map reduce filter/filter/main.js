@@ -14,21 +14,10 @@ var animals = [
 
 var dogs = animals.filter(function(animals){
     return animals.species === "dog";
+}).map((dogs)=>{
+    return dogs.name;
 });
 
-/********************************************
-*********  for loop method  *****************
-********************************************/
-/*
-
-var dogs = [];
-for(var i = 0 ; i < animals.length; i++){
-    if(animals[i].species === "dog"){
-        dogs.push(animals[i]);
-    }
-}
-
-*/
 
 console.log(dogs);
 
