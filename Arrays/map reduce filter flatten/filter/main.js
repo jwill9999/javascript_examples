@@ -1,26 +1,23 @@
 var animals = [
-    { name: "Jason", species:"rabitt"},
+    { name: "Jason", species:"rabbit"},
     { name: "Jessica", species:"dog"},
-    { name: "Jacky", species:"dog"},
+    { name: "Jacky", species:"owl"},
     { name: "Luke", species:"fish"},
-    { name: "Junior", species:"cat"},
+    { name: "Junior", species:"rat"},
     { name: "Thomas", species:"cat"}
-]
+];
 
 
-/******************************************
-***filter method with callback function****
-******************************************/
+// /******************************************
+// ***filter method with callback function****
+// ******************************************/
 
 var dogs = animals.filter(function(animals){
     return animals.species === "dog";
-}).map((dogs)=>{
-    return dogs.name;
 });
 
 
 console.log(dogs);
-
 
 
 /****************************************************************
@@ -39,3 +36,4 @@ Objectname: "Jacky"species: "dog"
 
 ******************************************************************
 *****************************************************************/
+

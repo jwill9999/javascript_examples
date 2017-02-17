@@ -56,3 +56,7 @@ console.log('mixedNumericArray:', mixedNumericArray.join());
 console.log('Sorted without a compare function:', mixedNumericArray.sort());
 console.log('Sorted with compareNumbers:', mixedNumericArray.sort(compareNumbers));
 console.log('__________________________________________________________________');
+
+var p = ['a','z','e','y'];
+p.sort();
+console.log(p);

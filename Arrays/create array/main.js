@@ -12,13 +12,7 @@ var array = new Array('Hello');
 var another = Array.of(1, 2, 3);
 
 
-
-
-var b = arrayMaker({
-  7: 1
-}, {
-  2: 3
-});
+var b = arrayMaker({7: 1}, {2: 3});
 
 function arrayMaker(n) {
   console.log(n);

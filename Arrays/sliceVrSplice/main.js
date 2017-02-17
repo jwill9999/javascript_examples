@@ -32,5 +32,13 @@ names.splice(1,0, 'billy');
 console.log(names); // [ 'jason', 'billy' ]
 
 
+var array4 = ['a','b','c'];
+
+var a = array4.indexOf('b');
+console.log(a); // 1
+array4.splice(1,1);
+console.log(array4);
+
+
 
 

@@ -1,6 +1,8 @@
 var a = [2, 9, 9]; 
+var b= ['a','b','c','d'];
 console.log(a.indexOf(9)); // 1 
 console.log(a.indexOf(7)); // -1 === does not exist
+console.log(b.indexOf('d'));  // 3
 
 if (a.indexOf(7) === -1) {
   // element doesn't exist in array
@@ -43,3 +45,21 @@ updateShoppingList(shoppingList , 'Milk');
 updateShoppingList(shoppingList , 'Milk'); 
 // Milk already exists in the shoppingList.
 console.log(shoppingList);
+
+var items = ['milk', 'bread', 'sugar'];
+
+function checkForProduct(item){
+    'use strict';
+    if (items.indexOf(item) === -1) {
+  // element doesn't exist in array
+  console.log('item does not exist');
+} else {
+
+console.log('item is in your list');
+
+}
+}
+
+checkForProduct('socks');
+checkForProduct('milk');
+

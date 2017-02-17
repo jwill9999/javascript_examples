@@ -1,4 +1,5 @@
 function list() {
+  'use strict';
   return Array.prototype.slice.call(arguments);
 }
 

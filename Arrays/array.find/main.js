@@ -4,7 +4,8 @@ var inventory = [
     {name: 'cherries', quantity: 5}
 ];
 
-function findCherries(fruit) { 
+function findCherries(fruit) {
+    'use strict'; 
     return fruit.name === 'cherries';
 }
 

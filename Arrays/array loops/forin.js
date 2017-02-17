@@ -1,8 +1,9 @@
-
+'use strict';
+var x, array = ['cat', 'dog', 'rabbit'];
 var numb3 = function (array) {
 
   //REMEMBER to set variable to empty string object.
-  var x = "";
+  x = "";
 
   //for in loop
   for (var i in array) {
@@ -15,6 +16,7 @@ var numb3 = function (array) {
   return x;
 };
 
-
+numb3(array);
+console.log(x);
 
 module.exports.numb3 = numb3;
